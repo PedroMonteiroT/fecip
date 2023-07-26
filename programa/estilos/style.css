@@ -12,29 +12,28 @@
 
 
 header{
-    position: sticky;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to top, var(--corrosa), var(--corazul));
     width: 100%;
-    height: 90px;
+    height: 80px;
     align-items: center;
     box-shadow: 0 2px 3px rgba(220, 78, 151, 0.263);
 }
 header .logo a img{
-    width: 90px;
+    width: 80px;
     margin-left: 20px;
 }
 
 nav ul{
     display: flex;
-    gap: 190px;
-    margin-right: 190px;
+    gap: 160px;
+    margin-right: 160px;
 }
 nav ul li a{
     display: flex;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     cursor: pointer;
     transition: border .3s;
     border-bottom: 3px solid transparent;
@@ -52,7 +51,7 @@ main{
 
 .container{
     width: 100%;
-    height: 770px
+    height: 670px
 }
 
 main .pesquisa{
@@ -73,7 +72,7 @@ main .imgmusculo img{
     display: block;
     margin: auto;
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -85,6 +84,9 @@ main .oquesaomusculos{
 }
 main .oquesaomusculos h1{
     margin-bottom: 20px;
+}
+main .oquesaomusculos p{
+    text-indent: 20px;
 }
 main .oquesaomusculos h1 hr{
     width: 80%;
@@ -104,14 +106,22 @@ main .role{
     color: rgba(0, 0, 0, 0.418);
 }
 .container2{
+    display: flex;
     width: 100%;
-    height: 832px;
+    height: 780px;
     background-color: black;
     padding: 50px;
 }
 .container2 .sistemamuscular h1, .sistemamuscular p{
     color: white;
     width: 500px;
+}
+.sistemamuscular p{
+    text-indent: 20px;
+}
+
+.container2 .sistemamuscular .imgsistemamuscular img{
+    width: 800px;
 }
 
 
