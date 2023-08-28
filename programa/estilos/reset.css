@@ -26,5 +26,18 @@ h1{
     font-size: 2.9em;
 }
 p{
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #331a1b;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--corvermelhofraco);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* border: 3px solid orange;  creates padding around scroll thumb */
+  }
