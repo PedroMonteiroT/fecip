@@ -98,7 +98,10 @@ main.pg2{
 }
 
 .pg3{
+    background-image: linear-gradient(to bottom, var(--corvermelhoforte ), #212121);
     color: white;
+    box-shadow: 1px 1px 2px 2px rgba(53, 0, 0, 0.133);
+    
 }
 .pg3 article{
     padding: 50px 100px 0;
@@ -144,9 +147,7 @@ main.pg2{
     position: relative;
     top: 60px;
 }
-.pg3 article .grid .caixa:hover ~ p{
-    filter: blur(10px);
-}
+
 
 
 
