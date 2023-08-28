@@ -102,7 +102,7 @@ main.pg2{
 }
 .pg3 article{
     padding: 50px 100px 0;
-    gap: 60px;
+    gap: 20px;
     font-size: 1.1em;
     position: relative;
     width: 100%;
@@ -115,7 +115,7 @@ main.pg2{
     background-color: var(--corvermelhoforte);
     border-radius: 20px;
     height: 300px;
-    width: 300px;
+    width: 850px;
     margin: auto;
     padding: 20px;
     color: white;
@@ -124,15 +124,12 @@ main.pg2{
     font-size: 1.1em;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.263);
 }
-.pg3 article .c1:hover{
-    width: 850px;
-    background-color: var(--corvermelho);
-}
 .pg3 article .grid{
     display: flex;
     gap: 50px;
 }
 .pg3 article .grid .caixa{
+    height: 300px;
     background-color: var(--corvermelhoforte);
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.263);
     border-radius: 20px;
