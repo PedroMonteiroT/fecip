@@ -27,7 +27,7 @@ body
 {
     position: absolute;
     inset: 4px;
-    background-image: linear-gradient(to top, var(--corvermelhofraco), var(--corvermelhoforte));
+    background-image: linear-gradient(to top, rgb(66, 52, 52), rgb(42, 42, 42));
     /* background: #222; */
     padding: 50px 40px;
     border-radius: 8px;

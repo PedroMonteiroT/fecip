@@ -4,8 +4,7 @@ body{
 }
 header{
     z-index: 1;
-    position: sticky;
-    top: 10px;
+    position: relative;
     width: 70%;
     height: 50px;
     margin: 30px auto 30px;
@@ -21,24 +20,26 @@ header nav ul{
 }
 
 
-header nav ul li a{
+header nav ul li a , header nav ul li a span{
     color: white;
     cursor: pointer;
     transition: all .4s;
 }
-/* header nav a:hover{
-    color: var(--corvermelhofraco);
-}  */
-header nav ul li:first-child a:hover{
+header nav ul li a span{
+    transform: translate(5px, 5px);
+
+}
+
+header nav ul li:first-child a:hover, header nav ul li:first-child a:hover span{
     color: rgb(53, 53, 255);
 }
-header nav :nth-child(2) a:hover{
+header nav :nth-child(2) a:hover, header nav ul li:nth-child(2) a:hover span{
     color: var(--corvermelhofraco);
 }
-header nav :nth-child(3) a:hover{
+header nav :nth-child(3) a:hover, header nav ul li:nth-child(3) a:hover span{
     color: rgb(200, 0, 255);
 }
-header nav ul li:last-child a:hover{
+header nav ul li:last-child a:hover, header nav ul li:last-child a:hover span{
     color: yellow;
 }
 
@@ -51,6 +52,28 @@ header nav hr {
     margin-top: 10px;
     height: 2px;
 }   
+
+.backto{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 45px;
+    bottom: 90px;
+    transition: all .7s;
+}
+.backto:hover{
+    background-color: lightgray;
+}
+.backto span{
+    color: var(--corvermelhofraco);
+    font-size: 2em;
+}
+
 
 
 .main{
@@ -82,23 +105,30 @@ main.pg2{
     width: 40vw;
     font-family: 'Anton', 'Poppins', sans-serif;
     font-size: 7em;
-    line-height: 134px;
+    line-height: 136px;
     font-weight: 400;
     visibility: hidden;
 }
+.pg2 article h1 span{
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--corvermelhofraco);
+}
 .pg2 article h1 hr{
     margin:0 0 20px;
-    width: 471px;
+    width: 565px;
     background-color: white;
     height: 5px;
+    border-radius: 10px 0 10px 0;
 }
 
 .pg2 article p{
-    width: 40vw;
+    width: 45vw;
+    font-size: 1.5em;
 }
 
 .pg3{
-    background-image: linear-gradient(to bottom, var(--corvermelhoforte ), #212121);
+    background-image: linear-gradient(to bottom, var(--corvermelhoforte ), #212121, black);
     color: white;
     box-shadow: 1px 1px 2px 2px rgba(53, 0, 0, 0.133);
     
