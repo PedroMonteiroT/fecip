@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700&display=swap');
 :root{
     --corvermelhoforte: #5F3032;
@@ -47,8 +48,8 @@ header{
     margin: 30px auto 30px;
     display: flex;
     justify-content: center;
-    top: -10px;
     font-weight: 700;
+    top: 0;
 }
 header nav{
     width: 100%;
@@ -177,7 +178,7 @@ header nav hr {
 .navigation-auto{
     position: absolute;
     width: 100vw;
-    margin-top: 699.5px;
+    bottom: 26px;
     display: flex;
     justify-content: center;
 }
@@ -230,7 +231,7 @@ header nav hr {
 .slide .text button{
     background-color: transparent;
     backdrop-filter: blur(10px);
-    width: 200px;
+    width: 170px;
     height: 50px;
     border-radius: 9px;
     border: 2px solid white;

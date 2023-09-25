@@ -2,14 +2,14 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <title>Login | Registro</title>
-        <link rel="stylesheet" href="estilos/login.css">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="estilos/cadastro.css">
         <link rel="stylesheet" href="estilos/reset.css">
     </head>
 <body>
     <div class="box">
         <form action="main.html">
-            <h2>Login</h2>
+            <h2>Cadastro</h2>
             <div class="InputBox">
                 <input type="text" required="required">
                 <span>nome de usuário</span>
@@ -20,11 +20,15 @@
                 <span>senha</span>
                 <i></i>
             </div>
-            <div class="Links">
-            <a href="#">Esqueci a senha</a>    
-            <a href="cadastro.html">Cadastre-se</a>    
+            <div class="InputBox">
+                <input type="password" required="required">
+                <span>confirmar senha</span>
+                <i></i>
             </div>
-            <input type="submit" value="login">
+            <div class="Links">  
+            <a href="login.html">Já tenho cadastro</a>    
+            </div>
+            <input type="submit" value="cadastrar">
         </form>
     </div>
     <script src="index.js"></script>
