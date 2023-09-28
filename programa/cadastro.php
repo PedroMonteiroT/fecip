@@ -1,8 +1,7 @@
 <?php
-
-
+//include_once('banco.php');
 $servername = "localhost";
-$database = "cadastro";
+$database = "portalfit";
 $username = "root";
 $password = "";
 //Create connection
@@ -12,15 +11,15 @@ if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }
 $nomeusuario        = $_POST['nomeusuario'];
-$senha              = $_POST['senha'];
+$senha              = $_POST['senhausuario'];
 $repsenha           = $_POST['repsenha'];
 
 if ($senha != $repsenha) {
-    Echo "<script>JavaScript:alert('Cadastro Negado')</script>";
-    header('Location:cadastro.html');
+    echo "<script>alert('Cadastro Negado')</script>";
+    header('location:cadastro.html');
 }
 $query = "insert into usuarios(nome, senha) values ('".$nomeusuario."', '".$senha."')";
 mysqli_query($conn, $query);
-echo "<script>javascript:alert('Cadastrado com sucesso')</script>";
-header('Location:main.html');
+echo "<script>alert('Cadastrado com sucesso')</script>";
+header('location:main.html');
 ?>
